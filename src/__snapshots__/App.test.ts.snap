@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Сетка Верстка не тронута 1`] = `
+exports[`Flexbox Верстка не тронута 1`] = `
 "
         <section class=\\"flex-container\\">
             <div></div>

@@ -21,7 +21,7 @@ afterAll(async () => {
     await browser.close();
 });
 
-describe('Сетка', () => {
+describe('Flexbox', () => {
     let page: Page;
     beforeEach(async () => {
         page = await browser.newPage();
