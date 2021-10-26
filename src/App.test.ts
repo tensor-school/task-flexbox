@@ -34,7 +34,7 @@ describe('Сетка', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders correctly', async () => {
+    it('Рисуется нужное изображение', async () => {
         const image = await page.screenshot();
 
         expect(image).toMatchImageSnapshot();
