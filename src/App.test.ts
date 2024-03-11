@@ -6,8 +6,6 @@ const customConfig = { threshold: 0 };
 const toMatchImageSnapshot = configureToMatchImageSnapshot({
     customDiffConfig: customConfig,
     noColors: true,
-    failureThreshold: 0.08,
-    failureThresholdType: 'percent'
 });
 expect.extend({ toMatchImageSnapshot });
 
@@ -27,7 +25,7 @@ describe('Flexbox', () => {
     let page: Page;
     beforeEach(async () => {
         page = await browser.newPage();
-        await page.goto(`file:${path.join(__dirname, 'index.html')}`);
+        await page.goto(`file:${path.join(__dirname, '/..', 'index.html')}`);
     });
 
     it('Верстка не тронута', async () => {
