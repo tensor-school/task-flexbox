@@ -13,7 +13,7 @@ let browser: Browser;
 
 beforeAll(async () => {
     browser = await puppeteer.launch({
-        headless: true,
+        args: ['--no-sandbox'],
     });
 });
 
